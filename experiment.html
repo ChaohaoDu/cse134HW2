@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Experiment</title>
+
+  <style type="text/css">
+    /*placeholder*/
+  </style>
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+  This is header
+  <nav>This is navbar</nav>
+</header>
+
+<main>
+  This is main
+  <details>
+    <summary>Secrets</summary>
+    This page contains all 63 different tags.
+  </details>
+
+  <aside>
+    Here is aside
+    <br/>
+    <a href="#myFavourite">About me</a>
+    <br/>
+    <a href="#visiterInfo">About you</a>
+  </aside>
+
+  <section id="h_section">
+    This is h section
+    <h1>This is h1</h1>
+    <h2>This is h2</h2>
+    <h3>This is h3</h3>
+  </section>
+
+  <div>Here is a <span>span</span> in a div</div>
+  <br/>
+  <p>Let's have a new line because I will write a paragraph now. In this paragraph, I will
+    <b>bold</b> some words since they are <strong>so important</strong>. I will <i>Italy</i> some
+    words if they are the name of the places. Because, as we know, the name of places are <em>good
+      info</em> as well. </p>
+
+  <hr/>
+
+  <section id="myFavourite">
+    Here I will show you some my favourite.
+    <ul>
+      <li>
+        code: <code>print("Hello World!")</code>
+      </li>
+      <li>
+        ASCII Art:
+        <pre>
+				 .----,
+				/--._(
+				|____|
+				[____] .=======.
+				  YY   q.     .p
+				  ||   | `---' |
+				  []   |_______| hjw
+			</pre>
+      </li>
+      <li>
+        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Websites</a>
+      </li>
+      <li>
+        Manga Character:
+        <picture src="https://i.imgur.com/K5P22VM.gif" width="10%"></picture>
+
+        <picture>
+          <source media="(min-width: 650px)" width="10%" srcset="https://i.imgur.com/K5P22VM.gif">
+          <source media="(min-width: 465px)" width="5%" srcset="https://i.imgur.com/K5P22VM.gif">
+          <img src="https://i.imgur.com/K5P22VM.gif">
+        </picture>
+      </li>
+      <li>
+        Video Web:
+        <iframe src="https://www.bilibili.com" width="80%" height="50%"></iframe>
+      </li>
+      <li>
+        Song:
+        <audio controls src="./static/experiment/rickroll.mp3"></audio>
+      </li>
+      <li>
+        Video:
+        <video controls src="./static/experiment/rickroll.webm" type="video/webm">
+      </li>
+      <li>
+        Canvas paint:
+        <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;">
+        </canvas>
+      </li>
+      <li>
+        svg star:
+        <svg width="300" height="200">
+          <polygon points="100,10 40,198 190,78 10,78 160,198"
+                   style="fill:lime;stroke:purple;stroke-width:5;fill-rule:evenodd;"/>
+        </svg>
+      </li>
+      <li>
+        Fruits:
+        <ol>
+          <li>Grapefruits</li>
+          <li>Peaches</li>
+          <li>Watermelons</li>
+        </ol>
+      </li>
+    </ul>
+  </section>
+  <hr/>
+  <section id="visiterInfo">
+    Now it's your turn. Tell me about yourself!
+    <form>
+      <label for="name">Name: </label>
+      <input type="text" id="name">
+      <br/>
+      <label for="college">College</label>
+      <select id="college">
+        <optgroup label="1-3">
+          <option>Revelle</option>
+          <option>John Muir</option>
+          <option>Thurgood Marshall</option>
+        </optgroup>
+        <optgroup label="4-7">
+          <option>Earl Warren</option>
+          <option>ERC</option>
+          <option>Sixth</option>
+          <option>Seventh</option>
+        </optgroup>
+      </select>
+      <fieldset>
+        <legend>What is your major?</legend>
+
+        <input type="radio" id="CS" name="major">
+        <label for="CS">CS</label><br/>
+
+        <input type="radio" id="Math" name="major">
+        <label for="Math">Math</label><br/>
+
+        <input type="radio" id="Physics" name="major">
+        <label for="Physics">Physics</label>
+      </fieldset>
+
+      <br/>
+
+      <label for="ice-cream-choice">Choose a flavor of your ice-cream:</label>
+      <input list="ice-cream-flavors" id="ice-cream-choice" name="ice-cream-choice"/>
+      <datalist id="ice-cream-flavors">
+        <option value="Chocolate">
+        <option value="Coconut">
+        <option value="Mint">
+        <option value="Strawberry">
+        <option value="Vanilla">
+      </datalist>
+
+      <br/>
+
+
+      Anything you would like to tell me?
+      <br/>
+      <textarea></textarea>
+      <br/>
+      <button>submit</button>
+    </form>
+  </section>
+
+  <template>
+    This is a template. You cannot see me!
+  </template>
+
+  <hr/>
+  Let's compare superheros and sidekicks
+  <table>
+    <caption>Superheros and sidekicks</caption>
+    <colgroup>
+      <col>
+      <col span="2" class="batman">
+      <col span="2" class="flash">
+    </colgroup>
+    <tr>
+      <td></td>
+      <th scope="col">Batman</th>
+      <th scope="col">Robin</th>
+      <th scope="col">The Flash</th>
+      <th scope="col">Kid Flash</th>
+    </tr>
+    <tr>
+      <th scope="row">Skill</th>
+      <td>Smarts</td>
+      <td>Dex, acrobat</td>
+      <td>Super speed</td>
+      <td>Super speed</td>
+    </tr>
+  </table>
+  <figure>
+    <img src="https://gentwenty.com/wp-content/uploads/2013/07/Superheroes.jpg.webp"
+         alt="SuperHeros" width="30%">
+    <figcaption>Superheros</figcaption>
+  </figure>
+
+
+  <hr/>
+
+</main>
+<footer>
+  This is footer
+</footer>
+
+<!-- canvas js -->
+<script defer>
+  var c = document.getElementById("myCanvas");
+  var ctx = c.getContext("2d");
+  ctx.font = "30px Arial";
+  ctx.strokeText("Hello World", 10, 50);
+</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
