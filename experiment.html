@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Experiment</title>
 
-  <style type="text/css">
+  <style>
     /*placeholder*/
   </style>
 
@@ -49,7 +49,7 @@
   <hr/>
 
   <section id="myFavourite">
-    Here I will show you some my favourite.
+    <h2>Here I will show you some my favourite.</h2>
     <ul>
       <li>
         code: <code>print("Hello World!")</code>
@@ -71,17 +71,16 @@
       </li>
       <li>
         Manga Character:
-        <picture src="https://i.imgur.com/K5P22VM.gif" width="10%"></picture>
 
         <picture>
-          <source media="(min-width: 650px)" width="10%" srcset="https://i.imgur.com/K5P22VM.gif">
-          <source media="(min-width: 465px)" width="5%" srcset="https://i.imgur.com/K5P22VM.gif">
-          <img src="https://i.imgur.com/K5P22VM.gif">
+          <source media="(min-width: 650px)" width="100" srcset="https://i.imgur.com/K5P22VM.gif">
+          <source media="(min-width: 465px)" width="50" srcset="https://i.imgur.com/K5P22VM.gif">
+          <img src="https://i.imgur.com/K5P22VM.gif" alt="Killua Zoldyck">
         </picture>
       </li>
       <li>
         Video Web:
-        <iframe src="https://www.bilibili.com" width="80%" height="50%"></iframe>
+        <iframe src="https://www.bilibili.com" width="700" height="300"></iframe>
       </li>
       <li>
         Song:
@@ -89,7 +88,7 @@
       </li>
       <li>
         Video:
-        <video controls src="./static/experiment/rickroll.webm" type="video/webm">
+        <video controls src="./static/experiment/rickroll.webm"></video>
       </li>
       <li>
         Canvas paint:
@@ -115,7 +114,7 @@
   </section>
   <hr/>
   <section id="visiterInfo">
-    Now it's your turn. Tell me about yourself!
+    <h2>Now it's your turn. Tell me about yourself!</h2>
     <form>
       <label for="name">Name: </label>
       <input type="text" id="name">
@@ -200,7 +199,7 @@
   </table>
   <figure>
     <img src="https://gentwenty.com/wp-content/uploads/2013/07/Superheroes.jpg.webp"
-         alt="SuperHeros" width="30%">
+         alt="SuperHeros" width="300">
     <figcaption>Superheros</figcaption>
   </figure>
 
@@ -213,7 +212,7 @@
 </footer>
 
 <!-- canvas js -->
-<script defer>
+<script>
   var c = document.getElementById("myCanvas");
   var ctx = c.getContext("2d");
   ctx.font = "30px Arial";
@@ -221,21 +220,5 @@
 </script>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
